@@ -1,0 +1,26 @@
+package interfacepgm;
+
+public class Demo implements SampleInterface {
+	
+	public void display()
+	{
+		System.out.println("Demo interface");
+		System.out.println("MAX_VALUE : " +MAX_VALUE);
+		System.out.println("B :"+B);
+		
+	}
+	
+	public void print()
+	{
+	System.out.println("print abstract method");
+	}
+
+	public static void main(String[] args) 
+	{
+		SampleInterface obj=new Demo();
+		obj.display();
+		obj.print();
+	
+	}
+
+}
